@@ -1,0 +1,36 @@
+﻿<Project Sdk="Microsoft.NET.Sdk">
+
+  <PropertyGroup>
+    <TargetFramework>netstandard2.0</TargetFramework>
+    <Authors>Filip Jeremic</Authors>
+    <PackageLicenseFile>LICENSE</PackageLicenseFile>
+    <Description>A standalone library for endian-aware reading/parsing of ELF (Executable and Linkable Format) files built for ease of use and pretty-printing ELF file contents.</Description>
+    <PackageProjectUrl>https://github.com/fjeremic/BinaryTools.Elf</PackageProjectUrl>
+    <RepositoryUrl>https://github.com/fjeremic/BinaryTools.Elf</RepositoryUrl>
+    <RepositoryType>GitHub</RepositoryType>
+    <PackageTags>ELF</PackageTags>
+    <Version>0.3.0</Version>
+    <PackageReleaseNotes>Release notes:
+https://github.com/fjeremic/BinaryTools.Elf/releases</PackageReleaseNotes>
+    <GenerateDocumentationFile>true</GenerateDocumentationFile>
+  </PropertyGroup>
+
+  <ItemGroup>
+    <Folder Include="Io\" />
+  </ItemGroup>
+
+  <ItemGroup>
+    <None Include="..\LICENSE">
+      <Pack>True</Pack>
+      <PackagePath></PackagePath>
+    </None>
+  </ItemGroup>
+
+  <ItemGroup>
+    <PackageReference Include="StyleCop.Analyzers" Version="1.1.118">
+      <PrivateAssets>all</PrivateAssets>
+      <IncludeAssets>runtime; build; native; contentfiles; analyzers; buildtransitive</IncludeAssets>
+    </PackageReference>
+  </ItemGroup>
+
+</Project>
